@@ -10,7 +10,7 @@ export function App() {
 
 
   return (
-    <BrowserRouter basename="/sportmanapp">
+    <BrowserRouter /*basename="/sportmanapp"*/>
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/players" element={<Show />} />
