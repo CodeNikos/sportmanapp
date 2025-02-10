@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sportmanapp/static/css/main.f976c693.css",
-    "main.js": "/sportmanapp/static/js/main.41442686.js",
+    "main.js": "/sportmanapp/static/js/main.e8d8563c.js",
     "static/media/boxicons.svg": "/sportmanapp/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
     "static/media/boxicons.eot": "/sportmanapp/static/media/boxicons.65a8ce52fc5427e8f94d.eot",
     "static/media/boxicons.woff": "/sportmanapp/static/media/boxicons.d12afc36557395143e4b.woff",
@@ -10,10 +10,10 @@
     "static/media/Logocaribes.png": "/sportmanapp/static/media/Logocaribes.16e636ab7ef35dfc2093.png",
     "index.html": "/sportmanapp/index.html",
     "main.f976c693.css.map": "/sportmanapp/static/css/main.f976c693.css.map",
-    "main.41442686.js.map": "/sportmanapp/static/js/main.41442686.js.map"
+    "main.e8d8563c.js.map": "/sportmanapp/static/js/main.e8d8563c.js.map"
   },
   "entrypoints": [
     "static/css/main.f976c693.css",
-    "static/js/main.41442686.js"
+    "static/js/main.e8d8563c.js"
   ]
 }
