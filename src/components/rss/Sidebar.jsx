@@ -56,7 +56,7 @@ export function Sidebar() {
                             </li>
 
                             <li className="nav-link">
-                                <a href="#" onClick={() => toggleItem(0)}>
+                                <a href="#ID" onClick={() => toggleItem(0)}>
                                     <i className='bx bxs-group icon'></i>
                                     <span className="text nav-text">Plantilla</span>
                                 </a>
