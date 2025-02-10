@@ -1,7 +1,7 @@
 import  React from 'react';
 import './App.css'
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import { Home, Index } from './components/home/home';
+import { Index } from './components/home/home';
 import { Jugador } from './components/jugadores/jugador';
 import { Show } from './components/jugadores/mostrar';
 

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import 'boxicons/css/boxicons.min.css';
 import './sidebar.css';
 import image1 from '../../assets/Logocaribes.png';
+import { BrowserRouter } from 'react-router-dom';
 
 export function Sidebar() {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -25,7 +26,7 @@ export function Sidebar() {
     };
 
     return (
-        <>
+        <BrowserRouter basename="/sportmanapp">
             <nav className={`sidebar ${isSidebarClosed ? 'close' : ''}`}>
                 <header>
                     <div className="image-text">
@@ -46,7 +47,7 @@ export function Sidebar() {
                     <div className="menu">
                         <ul className="menu-links">
                             <li>
-                                <a href="/">
+                                <a href="/sportmanapp/">
                                     <i className='bx bx-home-alt icon'></i>
                                     <span className="text nav-text">Home</span>
                                    
@@ -77,7 +78,7 @@ export function Sidebar() {
                             )}
 
                             <li className="nav-link">
-                                <a href="#">
+                                <a href="/sportmanapp/">
                                     <i className='bx bx-wallet icon'></i>
                                     <span className="text nav-text">Finanzas</span>
                                 </a>
@@ -123,7 +124,6 @@ export function Sidebar() {
                     </div>
                 </div>
             </nav>
-
-        </>
+        </BrowserRouter>
     );
 } 
