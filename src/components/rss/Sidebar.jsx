@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import 'boxicons/css/boxicons.min.css';
 import './sidebar.css';
 import image1 from '../../assets/Logocaribes.png';
-import { BrowserRouter } from 'react-router-dom';
+
+
 
 export function Sidebar() {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -26,7 +27,7 @@ export function Sidebar() {
     };
 
     return (
-        <BrowserRouter basename="/sportmanapp">
+        <div className="sidebar-container">
             <nav className={`sidebar ${isSidebarClosed ? 'close' : ''}`}>
                 <header>
                     <div className="image-text">
@@ -47,7 +48,7 @@ export function Sidebar() {
                     <div className="menu">
                         <ul className="menu-links">
                             <li>
-                                <a href="/sportmanapp/">
+                                <a href="/">
                                     <i className='bx bx-home-alt icon'></i>
                                     <span className="text nav-text">Home</span>
                                    
@@ -55,7 +56,7 @@ export function Sidebar() {
                             </li>
 
                             <li className="nav-link">
-                                <a href="#" onClick={() => toggleItem(0)}>
+                                <a  onClick={() => toggleItem(0)}>
                                     <i className='bx bxs-group icon'></i>
                                     <span className="text nav-text">Plantilla</span>
                                 </a>
@@ -78,21 +79,21 @@ export function Sidebar() {
                             )}
 
                             <li className="nav-link">
-                                <a href="/sportmanapp/">
+                                <a href="/temp">
                                     <i className='bx bx-wallet icon'></i>
                                     <span className="text nav-text">Finanzas</span>
                                 </a>
                             </li>
 
                             <li className="nav-link">
-                                <a href="#">
+                                <a href="/temp">
                                     <i className='bx bx-bar-chart-alt-2 icon'></i>
                                     <span className="text nav-text">Estadísticas</span>
                                 </a>
                             </li>
 
                             <li className="nav-link">
-                                <a href="#">
+                                <a href="/temp">
                                     <i className='bx bx-trophy icon'></i>
                                     <span className="text nav-text">Torneos</span>
                                 </a>
@@ -102,7 +103,7 @@ export function Sidebar() {
 
                     <div className="bottom-content">
                         <li>
-                            <a href="#">
+                            <a href="/temp">
                                 <i className='bx bx-log-out icon'></i>
                                 <span className="text nav-text">Logout</span>
                             </a>
@@ -124,6 +125,6 @@ export function Sidebar() {
                     </div>
                 </div>
             </nav>
-        </BrowserRouter>
+        </div>
     );
 } 
