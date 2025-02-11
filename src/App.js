@@ -10,7 +10,7 @@ import { Temp } from './components/finanzas/fin'
 export function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/sportmanapp">
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/players" element={<Show />} />
